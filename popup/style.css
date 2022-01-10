@@ -1,0 +1,47 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#open {
+  background-color: rgb(206, 55, 206);
+  border: none;
+  padding: 5px 26px;
+  cursor: pointer;
+  box-shadow: 0 0 3px 4px rgba(0, 0, 0, 0.1) inset;
+}
+.popup {
+  position: fixed;
+  padding: 3px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.main {
+  width: 300px;
+  height: 100px;
+  padding: 10px;
+  background-color: white;
+  position: relative;
+}
+.popup #close {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgb(206, 55, 206);
+  padding: 4px 9px;
+  box-shadow: 0 0 3px 4px rgba(0, 0, 0, 0.1) inset;
+}
+.active {
+  display: flex;
+}

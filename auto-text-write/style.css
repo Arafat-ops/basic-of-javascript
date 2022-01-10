@@ -1,0 +1,16 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #1f2633;
+}
+
+.container {
+  width: 300px;
+  text-align: center;
+  background-color: #1f2633;
+  color: whitesmoke;
+
+  padding: 2rem;
+}

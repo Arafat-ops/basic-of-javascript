@@ -1,0 +1,23 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.curousel {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+.imgContainer {
+  transition: transform 1s linear;
+  transform: translateX(0);
+  display: flex;
+}
+.imgContainer img {
+  object-fit: cover;
+  width: 300px;
+  height: 300px;
+}
