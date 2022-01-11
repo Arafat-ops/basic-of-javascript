@@ -1,0 +1,148 @@
+body {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+img {
+  width: 200px;
+}
+.header {
+  margin-top: -8px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.header .nav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+}
+.nav {
+  background-color: white;
+  position: relative;
+}
+.nav #menu-bar {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  margin-bottom: 1rem;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+#menu-bar .fas {
+  font-size: 1.4em;
+  color: rebeccapurple;
+}
+@media screen and (min-width: 400px) {
+  .active {
+    display: none;
+  }
+}
+
+.nav-container {
+  margin-top: 0;
+  width: 100%;
+  margin-bottom: 0;
+}
+.nav-container ul {
+  list-style-type: none;
+  margin-top: 0;
+  width: 100%;
+  margin-bottom: 0;
+  position: relative;
+}
+.nav-container ul li {
+  padding: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  margin: 0px 90px;
+}
+.nav-container ul li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: rgb(97, 23, 172);
+}
+
+@media screen and (max-width: 420px) {
+  .nav #menu-bar {
+    width: 100%;
+    text-align: right;
+    position: relative;
+  }
+  .nav-container ul {
+    margin-top: 4px;
+    padding: 0;
+  }
+  .showNav {
+    display: none;
+  }
+  .nav-container ul li {
+    width: 100%;
+    margin: 0 0;
+    border-bottom: none;
+  }
+  .nav-container ul li:hover {
+    background-color: rgb(219, 209, 230);
+  }
+  .nav-container ul li:hover a {
+    color: #112e64;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 800px) {
+  .nav-container ul li {
+    margin: 0px 23px;
+  }
+}
+.home {
+  width: 100%;
+  margin-top: 0.6rem;
+  /* border: 2px solid green; */
+  position: relative;
+}
+.home img {
+  width: 100%;
+  height: 100vh;
+  box-shadow: 0 0 2px 21x rgba(0, 0, 0, 0.1);
+  opacity: 0.5;
+}
+
+.home .description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(68, 30, 68);
+}
+.home .description p {
+  padding: 1rem;
+}
+.description h1 {
+  color: #112e64;
+  border: 1px solid #112e64;
+  font-size: 20px;
+  cursor: pointer;
+  /* animation: work 2s infinite linear; */
+}
+@keyframes work {
+  to {
+    font-size: 18px;
+  }
+}
+.nav-container ul li:hover a {
+  color: #112e64;
+  font-weight: bold;
+}
